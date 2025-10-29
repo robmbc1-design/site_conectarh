@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta RH e Consultoria - Soluções em Recursos Humanos</title>
+    <meta name="description" content="Conecta RH e Consultoria oferece soluções completas em gestão de recursos humanos para empresas de todos os tamanhos.">
+    <meta name="keywords" content="RH, Recursos Humanos, Consultoria, Recrutamento, Seleção, Gestão de Pessoas">
+    <meta property="og:title" content="Conecta RH e Consultoria">
+    <meta property="og:description" content="Soluções completas em gestão de recursos humanos">
+    <meta name="twitter:title" content="Conecta RH e Consultoria">
+    <meta name="twitter:description" content="Soluções completas em gestão de recursos humanos">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #64748b;
+            --accent-color: #1e3a8a;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+        }
+    }
+
+    @layer base {
+        body {
+            @apply text-[var(--text-dark)] bg-white;
+        }
+        
+        h1, h2, h3, h4 {
+            @apply font-bold;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[var(--accent-color)] transition-colors duration-300;
+        }
+        
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-dark)];
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Services.js"></script>
+    <script type="text/babel" src="components/Portfolio.js"></script>
+    <script type="text/babel" src="components/Testimonials.js"></script>
+    <script type="text/babel" src="components/ContactForm.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
